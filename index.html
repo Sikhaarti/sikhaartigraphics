@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <title>SikhaArti Graphics</title>
+    <style>
+      /* Custom styles for hover animation */
+      .nav-link {
+          position: relative;
+          transition: color 0.3s;
+      }
+
+      .nav-link::before {
+          content: '';
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background-color: #FA7000;
+          transition: width 0.3s ease-in-out;
+      }
+
+      .nav-link:hover::before {
+          width: 100%;
+      }
+
+      .nav-link:hover {
+          color: #FA7000;
+      }
+
+      /* Custom styles for header */
+      header {
+          background-color: #021e15; /* Changed background color */
+          z-index: 1000; /* Ensure header stays on top */
+      }
+
+      .header-text {
+          color: #00120c; /* Changed text color */
+      }
+
+      /* Custom styles for service items hover animation */
+      .service-item {
+          transition: transform 0.3s ease-in-out;
+      }
+
+      .service-item:hover {
+          transform: scale(1.05);
+      }
+
+      /* Custom styles for work portfolio images */
+      .portfolio-item {
+          overflow: hidden;
+          transition: transform 0.3s ease-in-out;
+      }
+
+      .portfolio-item img {
+          transition: transform 0.3s ease-in-out;
+      }
+
+      .portfolio-item:hover img {
+          transform: scale(1.1);
+      }
+
+      /* Custom styles for fade-in animation */
+      .fade-in {
+          opacity: 0;
+          animation: fadeIn 1.5s forwards;
+      }
+
+      @keyframes fadeIn {
+          to {
+              opacity: 1;
+          }
+      }
+
+      /* Import Google Font */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      /* Apply Custom Font */
+      .custom-font {
+          font-family: 'Roboto', sans-serif;
+      }
+
+      /* Add padding to the top of the body to prevent content being hidden under the fixed header */
+      body {
+          padding-top: 0; /* Adjust this value to match the header height */
+      }
+    </style>
+  </head>
+
+  <body class="bg-023020">
+    <!-- Changed body background color -->
+
+    <!-- Header -->
+<header class="bg-023020 fade-in py-4 text-white">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+    <div class="flex items-center">
+      <!-- Android-friendly logo on the left -->
+      <img src="https://i.ibb.co/YX6x7pm/Sikha-Arti-graphics-Logo.png" alt="Your Logo" class="mb-6 h-12 w-auto md:mb-0" />
+      <!-- Hamburger menu icon -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav id="menu" class="hidden md:flex md:flex-wrap md:space-x-8 md:w-auto">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Services</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SikhaArti Graphics</title>
+  <!-- Link to Aquire font -->
+  <link href="https://fonts.googleapis.com/css2?family=Aquire:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .custom-font {
+      font-family: 'Bord Demo', sans-serif;
+    }
+    /* Additional styles if needed */
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="fade-in relative" style="background-color: #021e15; color: white;">
+    <div class="container mx-auto flex flex-col md:flex-row">
+      <!-- Text Content -->
+      <div class="order-2 px-6 py-16 md:order-1 md:w-3/5 md:px-16">
+        <h1 class="custom-font mb-4 text-4xl md:text-6xl">SikhaArti Graphics</h1>
+        <p class="mb-8 text-lg md:text-xl">
+          "Welcome to SikhaArti Graphics, where creativity takes shape and design meets precision. From vibrant prints to captivating graphics, we specialize in bringing your vision to life. Our passion lies in crafting compelling designs and delivering exceptional printing solutions tailored to your needs. With a keen eye for detail and a dedication to excellence, we're here to elevate your brand and make a lasting impression. Explore our range of services and let's embark on a journey of innovation together. Trust SikhaArti Graphics for unparalleled quality and unparalleled creativity."
+        </p>
+      </div>
+      <!-- Image Content -->
+      <div class="order-1 md:order-2 md:w-2/5">
+        <img src="https://i.ibb.co/kKnrsyr/painting-woman-sitting-tree-reading-book-generative-ai-1-transformed.png" alt="Hero Image" class="h-full w-full object-cover object-center" width="400" height="300" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+    <!-- About Us Section -->
+    <section class="fade-in bg-gray-100 py-20">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <!-- Text Content -->
+          <div class="mb-8 md:mb-0 md:w-1/2">
+            <!-- Added mb-8 to create space below text -->
+            <h2 class="mb-6 text-4xl font-bold text-black md:text-5xl">About Us</h2>
+            <p class="text-lg leading-relaxed">SikhaArti Graphics is your go-to partner for creative design and printing solutions. We are committed to delivering exceptional quality and innovative designs that make your brand stand out.</p>
+            <p class="mt-4 text-lg leading-relaxed">With years of experience and a passion for artistry, our team is dedicated to meeting your unique requirements and exceeding your expectations.</p>
+          </div>
+          <!-- Image Content -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="md:w-1/2">
+            <img src="https://i.ibb.co/SmCgz6V/Logo-Png.png" alt="About Us Image" class="w-auto rounded-lg shadow-lg md:h-auto md:max-h-80" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="fade-in py-20" style="background-color: #021e15;">
+      <!-- Changed background color to #021e15 -->
+      <div class="container mx-auto">
+        <h2 class="mb-12 text-center text-4xl font-bold text-white md:text-5xl">Work Portfolio</h2>
+        <!-- Added text-white for text color -->
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <!-- Gallery Item 1 -->
+          <div class="portfolio-item overflow-hidden rounded-lg bg-white shadow-md">
+            <img src="https://i.ibb.co/w0TjTsk/Free-Minimal-Business-Card-Mockup-1.jpg" alt="Gallery Image" class="h-64 w-full object-cover" />
+          </div>
+          <!-- Gallery Item 2 -->
+          <div class="portfolio-item overflow-hidden rounded-lg bg-white shadow-md">
+            <img src="https://i.ibb.co/Dfj0zPy/Maa-Annapurna-Logo.jpg" alt="Gallery Image" class="h-64 w-full object-cover" />
+          </div>
+          <!-- Gallery Item 3 -->
+          <div class="portfolio-item overflow-hidden rounded-lg bg-white shadow-md">
+            <img src="https://i.ibb.co/WnFy6Wn/Free-Menu-Mockup-4.jpg" alt="Gallery Image" class="h-64 w-full object-cover" />
+          </div>
+          <!-- Gallery Item 4 -->
+          <div class="portfolio-item overflow-hidden rounded-lg bg-white shadow-md">
+            <img src="https://i.ibb.co/Fs0hbKh/33.png" alt="Gallery Image" class="h-64 w-full object-cover" />
+          </div>
+          <!-- Add more Gallery Items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="fade-in bg-gray-200 py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="mb-8 text-center text-4xl font-bold text-black md:text-5xl">Services</h2>
+
+        <!-- Quote Request Items -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Item 1 -->
+          <div class="service-item overflow-hidden rounded-lg bg-white shadow-md">
+            <img src="https://i.ibb.co/19SStP4/Graphic-Designing.png" alt="Designing" class="h-48 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="mb-2 text-lg font-bold">Graphic Designing</h3>
+              <p class="mb-4 text-sm text-gray-700">"Transform your vision into captivating visuals with our expert graphic design services." "From logos to printables design, unleash creativity with our professional design solutions."</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="service-item overflow-hidden rounded-lg bg-white shadow-md">
+            <img src="https://i.ibb.co/sHcGk54/Printing.jpg" alt="Printing" class="h-48 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="mb-2 text-lg font-bold">Printing</h3>
+              <p class="mb-4 text-sm text-gray-700">"Experience high-quality printing for your business needs with our reliable printing services." "Print with precision and speed—trust us to bring your projects to life."</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="service-item overflow-hidden rounded-lg bg-white shadow-md">
+            <img src="https://i.ibb.co/xM2ZXqP/Web-Designing.jpg" alt="Website Designing" class="h-48 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="mb-2 text-lg font-bold">Web Development</h3>
+              <p class="mb-4 text-sm text-gray-700">"Elevate your online presence with our custom web design services tailored to your brand." "From sleek layouts to responsive designs, we bring your website vision to reality."</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="service-item overflow-hidden rounded-lg bg-white shadow-md">
+            <img src="https://i.ibb.co/5kb6hVR/sanjeev-nagaraj-u4bv-BOOp-ZB4-unsplash.jpg" alt="Item 4" class="h-48 w-full object-cover" />
+            <div class="p-4">
+              <h3 class="mb-2 text-lg font-bold">Video Editing</h3>
+              <p class="mb-4 text-sm text-gray-700">"Video editing: where raw footage transforms into cinematic brilliance. Every cut, every transition, a brushstroke on the canvas of storytelling. Seamlessly blending visuals and sound, crafting narratives that captivate and inspire. It's the art of turning moments into masterpieces."
+
+
+
+
+
+
+
+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Function to add random delay to fade-in animations
+      function addRandomFadeInDelay() {
+          const fadeElements = document.querySelectorAll('.fade-in');
+          fadeElements.forEach(element => {
+              const delay = Math.random() * 2; // Random delay between 0 and 2 seconds
+              element.style.animationDelay = `${delay}s`;
+          });
+      }
+
+      // Call the function on page load
+      window.onload = addRandomFadeInDelay;
+
+      // Function to toggle the navigation menu on mobile
+      document.getElementById('menu-btn').addEventListener('click', () => {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+      });
+    </script>
+    
+        <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Contact Information -->
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+            <p class="mb-2">SikhaArti Graphics</p>
+            <p class="mb-2">1079, Sector-23, NIT Faridabad,</p>
+            <p class="mb-2">Haryana, India - 121005</p>
+            <p class="mb-2">Phone: +91 8010859080</p>
+            <p class="mb-2">Email: sikhaartigraphics@gmail.com</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+            <ul>
+              <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+              <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
+              <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+              <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+              <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 4.557a9.84 9.84 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.865 9.865 0 01-3.127 1.196 4.92 4.92 0 00-8.388 4.482 13.978 13.978 0 01-10.15-5.148 4.822 4.822 0 001.522 6.573 4.905 4.905 0 01-2.228-.616v.062a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.224.085 4.926 4.926 0 004.604 3.417 9.876 9.876 0 01-7.29 2.035 13.944 13.944 0 007.547 2.213c9.056 0 14.009-7.497 14.009-13.986 0-.213-.005-.425-.014-.636A10.025 10.025 0 0024 4.557z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.23 5.924a8.236 8.236 0 01-2.357.646 4.102 4.102 0 001.804-2.262 8.22 8.22 0 01-2.606.996 4.098 4.098 0 00-6.987 3.735 11.624 11.624 0 01-8.457-4.287 4.093 4.093 0 001.27 5.457 4.083 4.083 0 01-1.856-.514v.052a4.098 4.098 0 003.28 4.015 4.103 4.103 0 01-1.849.07 4.098 4.098 0 003.827 2.848A8.222 8.222 0 012 19.54a11.615 11.615 0 006.29 1.842c7.547 0 11.675-6.26 11.675-11.674 0-.177-.004-.355-.012-.532a8.348 8.348 0 002.05-2.127z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.013-.608 1.794-1.574 2.163-2.723-.949.555-2.003.959-3.127 1.175-.896-.959-2.173-1.558-3.594-1.558-2.717 0-4.92 2.206-4.92 4.923 0 .386.044.762.127 1.124C7.69 8.094 4.067 6.13 1.64 3.161c-.422.722-.664 1.561-.664 2.475 0 1.71.87 3.213 2.188 4.096-.806-.026-1.566-.247-2.23-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.624-.03-.924-.086.625 1.951 2.444 3.373 4.6 3.413-1.68 1.318-3.809 2.105-6.102 2.105-.396 0-.787-.023-1.17-.067 2.189 1.397 4.797 2.213 7.599 2.213 9.109 0 14.095-7.548 14.095-14.096 0-.215-.005-.43-.014-.643.965-.698 1.8-1.573 2.462-2.573z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 SikhaArti Graphics. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
